@@ -20,6 +20,7 @@ header nav {
 }
 header nav a.navbar-brand h2 {
 
+  
   color: var(--bs-black);
 }
 header nav ul.action-menu .nav-item .nav-link {
@@ -34,14 +35,13 @@ header nav ul.action-menu .nav-item .nav-link {
   border-radius: none!important;
   
 }
+/*****************************
 
 @media(max-width: 567px){
   
 }
-/*****************************
     Login Form
-******************************/
-.form-login{
+    .form-login{
     bottom: 45%!important;
 }
 
@@ -73,8 +73,6 @@ header nav ul.action-menu .nav-item .nav-link {
   left: 0;
   right: 0;
 }
-
-
 
 .carousel-caption h5 {
   color: #fff;
@@ -110,6 +108,110 @@ header nav ul.action-menu .nav-item .nav-link {
   }
   
 }
+******************************/
+.form-login{
+  bottom: 45%!important;
+}
+
+
+.carousel-item {
+width: 100%;
+height: 100vh!important;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.carousel-item::before {
+content: '';
+background-color: rgba(12, 11, 10, 0.5);
+position: absolute;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+}
+.carousel-caption {
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+bottom: 0;
+top: 40%;
+left: 0;
+right: 0;
+}
+
+.carousel-caption h5 {
+color: #fff;
+margin-bottom: 10px;
+font-size: 42px;
+font-weight: 700;
+width: 80%;
+margin: 0px auto 30px auto;
+}
+
+.carousel-caption p {
+
+font-size: 20px;
+width: 80%;
+-webkit-animation-delay: 0.4s;
+animation-delay: 0.4s;
+margin: 0px auto 30px auto;
+}
+
+
+@media(max-width:768px){
+.carousel-caption h5 {
+  font-size: 38px;
+}
+}
+@media(max-width:577px){
+.carousel-caption h5 {
+  font-size: 25px;
+  
+}
+.carousel-caption p {
+  font-size: 13px;
+}
+
+}
+.carousel-caption h5 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 42px;
+  font-weight: 700;
+  width: 80%;
+  margin: 0px auto 30px auto;
+}
+
+.carousel-caption p {
+  
+  font-size: 20px;
+  width: 80%;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+  margin: 0px auto 30px auto;
+}
+
+
+@media(max-width:768px){
+  .carousel-caption h5 {
+    font-size: 38px;
+  }
+}
+@media(max-width:577px){
+  .carousel-caption h5 {
+    font-size: 25px;
+    
+  }
+  .carousel-caption p {
+    font-size: 13px;
+  }
+  
+}
+
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
