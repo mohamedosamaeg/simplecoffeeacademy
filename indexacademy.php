@@ -1,4 +1,4 @@
-<?php 
+<!--<?php 
  
 // Start a session 
 session_start(); 
@@ -19,7 +19,7 @@ if (isset($_GET['logout'])) {
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
+    Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -49,8 +49,8 @@ if (isset($_GET['logout'])) {
        
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="/images/logo-label.svg" alt="">
+                <a class="navbar-brand" href="#">
+                    <img src="simplecoffeeacademy\images\logo-label.svg" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -60,26 +60,52 @@ if (isset($_GET['logout'])) {
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="courses.html">Courses</a>
+                            <a class="nav-link" href="courses.php">Courses</a>
                         </li>
 
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="http://localhost/simplecoffee/simplecoffeeacademy/client_dashbord.php">Dashboard</a>
+                        </li> -->
                         <li class="nav-item">
-                            <a class="nav-link" href="dashboard.html">Dashboard</a>
+                            <a class="nav-link" href="indexshop.php">Shop</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="indexshop.html">Shop</a>
-                        </li>
-                         <li class="nav-item">
-                            <a class="nav-link" href="login.html">login</a>
+                         <!-- <li class="nav-item">
+                            <a class="nav-link" href="login.php">login</a>
                         </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.php">logout</a>
+
+                        </li>  -->
                     </ul>
+                    <div class="buttons"> 
+        <?php 
+        if (!isset($_SESSION['user_id'])) { ?> 
+                <input type="button" value="Login" onclick="redirectToURL('http://localhost/simplecoffee/simplecoffeeacademy/login.php')"> 
+                 
+            <?php } else { 
+                // User is logged in 
+                $username = $_SESSION['username']; ?> 
+             
+                <input type="button" value="Dashboard" onclick="redirectToURL('http://localhost/simplecoffee/simplecoffeeacademy/client_dashbord.php')"> 
+                <input type="button" value="Logout" onclick="redirectToURL('http://localhost/simplecoffee/simplecoffeeacademy/indexacademy.php?logout')"> 
+            <?php } 
+            ?> 
+      </div> 
+ 
+        <!--Navbar End-->
                 </div>
             </div>
         </nav>
-        <!--Navbar End-->
+        <script> 
+      // JavaScript function to redirect to a URL 
+      function redirectToURL(url) { 
+          window.location.href = url; 
+      } 
+    </script>
+       
     </header>
     <!--Header End-->
 
@@ -99,8 +125,8 @@ if (isset($_GET['logout'])) {
                     src="images/coffee 7.png"
                     class="d-block w-100" alt="...">
                 <div class="carousel-caption d-block">
-                    <h5>Academy of teaching employees in Simple Coffee Academy </h5>
-                    <p>give yout self and us a chance to develop <br> empowering you to craft dynamic and interactive Skills</p>
+                    <h5>Academy for teaching employees in Simple Coffee Academy </h5>
+                    <p>give yourself and us a chance to develop <br> empowering you to craft dynamic and interactive Skills</p>
                 </div>
             </div>
             <div class="carousel-item">
@@ -109,7 +135,7 @@ if (isset($_GET['logout'])) {
                     class="d-block w-100" alt="...">
                 <div class="carousel-caption d-block">
                     <h5>What do we teach you?</h5>
-                    <p> Barista</p>
+                    <p> we have to save our quality control for our clients</p>
                 </div>
             </div>
             <div class="carousel-item">
@@ -118,7 +144,7 @@ if (isset($_GET['logout'])) {
                     class="d-block w-100" alt="...">
                 <div class="carousel-caption d-block">
                     <h5>What is our goal</h5>
-                    <p>Spreading programming awareness and <br> facilitating JavaScript education to be your way in the world of programming.</p>
+                    <p>saving quality <br> teaching you how you can be better</p>
                 </div>
             </div>
         </div>
@@ -145,46 +171,26 @@ if (isset($_GET['logout'])) {
                 <h2 class="h1-responsive font-weight-bold text-center my-2">About</h2>
                 <!--Section description-->
                 <p class="text-center w-responsive mx-auto mb-1">Do you have any questions? Please do not hesitate to
-                    contact us directly. Our team will come back to you within
+                    contact us directly. Your friends will come back to you within
                     a matter of hours to help you.</p>
                 <div class="row  pt-5 pb-5">
 
                     <div class="col-lg-5 align-items-stretch video-box"
-                        style='background-image: url("img/coffee 8.png");'>
-                        <a href="#" class="venobox play-btn mb-4"
+                        style='background-image: url("images/coffee 8.png");'>
+                        <a href="https://www.udemy.com/course/barista-training-and-techniques/" class="venobox play-btn mb-4"
                             data-vbtype="video" data-autoplay="true"></a>
                     </div>
 
                     <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
 
                         <div class="content">
-                            <h3>Another course  <strong>if you want to become an expert</strong></h3>
+                            <h3>Another course  <strong>if you want to become an expert like a barista</strong></h3>
                             <p>
-                                Here there is a course on YouTube : Course Structure and Projects contains 200 lectures
+                                Here there is a course  : Course Structure and Projects contains 200 lectures
 
                                         I was a fan of delving deeper into the field of JavaScript study
                             </p>
-                            <!-- <p class="font-italic">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore
-                                magna aliqua.
-                            </p>
-                            <ul>
-                                <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat.</li>
-                                <li><i class="bx bx-check-double"></i> Duis aute irure dolor in reprehenderit in
-                                    voluptate velit.</li>
-                                <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat. Duis aute irure dolor in reprehenderit in voluptate trideta
-                                    storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                            </ul>
-                            <p>
-                                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                proident, sunt in
-                                culpa qui officia deserunt mollit anim id est laborum
-                            </p> -->
+                           
                         </div>
 
                     </div>
@@ -192,169 +198,16 @@ if (isset($_GET['logout'])) {
                 </div>
 
             </div>
-        </section><!-- End About Section -->
-
-        <section>
-            <div class="container course pb-5 pt-5">
-                <h2 class="h1-responsive font-weight-bold text-center my-4">Courses</h2>
-                <!--Section description-->
-                <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to
-                    contact us directly. Our team will come back to you within
-                    a matter of hours to help you.</p>
-                
-
-            
-
-                    <div class="col-md-4">
-                        <div class="card box">
-                            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                                <img src="images/coffee 5.png"
-                                    class="img-fluid" />
-                                <a href="#!">
-                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">JS Course</h5>
-                                <p class="card-text">
-                                    Introduction to JavaScript
-                                    </p>
-                                <a href="file/site/menu.html" class="btn btn-primary">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
 
-       <!--<section>
-            <div class="container">
-                <h2 class="h1-responsive font-weight-bold text-center my-4">Gallery</h2>
-                Section description
-                <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to
-                    contact us directly. Our team will come back to you within
-                    a matter of hours to help you.</p>
-                 Gallery
-                <div class="row">
-                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                        <img src="https://cdn.pixabay.com/photo/2016/06/25/12/52/laptop-1478822_960_720.jpg"
-                            class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+       
 
-                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
-                            class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
-                    </div>
-
-                    <div class="col-lg-4 mb-4 mb-lg-0">
-                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
-                            class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
-
-                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-                            class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
-                    </div>
-
-                    <div class="col-lg-4 mb-4 mb-lg-0">
-                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
-                            class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
-
-                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
-                            class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
-                    </div>
-                </div>
-                Gallery -->
+      
             </div>
         </section>
 
 
-        <section>
-            <div class="container mb-5">
-                <!--Section: Contact v.2-->
-                <section class="mb-4">
-
-                    <!--Section heading-->
-                    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
-                   
-                    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate
-                        to contact us directly. Our team will come back to you within
-                        a matter of hours to help you.</p>
-
-                        <div class="row">
-
-                      
-                            <div class="col-md-6 mb-md-0 mb-5">
-                                <form id="contact-form" name="contact-form" action="#" method="POST">
-    
-                                    <!--Grid row-->
-                                    <div class="row">
-    
-                                        <!--Grid column-->
-                                        <div class="col-md-6">
-                                            <div class="md-form mb-0">
-                                                <label for="name" class="">Your name</label>
-                                                <input type="text" id="name" name="name" class="form-control">
-                                                
-                                            </div>
-                                        </div>
-                                        <!--Grid column-->
-    
-                                        <!--Grid column-->
-                                        <div class="col-md-6">
-                                            <div class="md-form mb-0">
-                                                <label for="email" class="">Your email</label>
-                                                <input type="text" id="email" name="email" class="form-control">
-                                               
-                                            </div>
-                                        </div>
-                                        <!--Grid column-->
-    
-                                    </div>
-                                    <!--Grid row-->
-    
-                                    <!--Grid row-->
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="md-form mb-0">
-                                                <label for="subject" class="">Subject</label>
-                                                <input type="text" id="subject" name="subject" class="form-control">
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                   
-    
-                                   
-                                    <div class="row">
-    
-                                        <!--Grid column-->
-                                        <div class="col-md-12">
-    
-                                            <div class="md-form">
-                                                <label for="message">Your message</label>
-                                                <textarea type="text" id="message" name="message" rows="2" 
-                                                class="form-control md-textarea"></textarea>
-                                                
-                                            </div>
-    
-                                        </div>
-                                    </div>
-                                    <!--Grid row-->
-    
-                                </form>
-    
-                                <div class="text-center text-md-left">
-                                    <a class="btn btn-primary"
-                                        onclick="document.getElementById('contact-form').submit();">Send</a>
-                                </div>
-                                <div class="status"></div>
-                            </div>
-                        <!--Grid column-->
-
-                        <!--Grid column-->
-                     <div class="col-md-6 text-center">
-                            <iframe
-                                src=""
-                                width="600" height="300px" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </section>
+       
             </div> 
         </section>
         <!-- Footer -->
@@ -393,7 +246,7 @@ if (isset($_GET['logout'])) {
                         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                             <!-- Links -->
                             <h6 class="text-uppercase fw-bold mb-4">
-                                Contact
+                                Contact 
                             </h6>
                             <p><i class="bi bi-envelope me-3"></i>  info@example.ru</p>
                              <p><i class="bi bi-phone me-3"></i>89015275894</p>

@@ -113,7 +113,7 @@ h2 {
   text-decoration: underline;
 }
 
-button {
+ button {
   background: #fff;
   color: #000;
   font-weight: 600;
@@ -130,7 +130,8 @@ button:hover {
   color: #fff;
   border-color: #fff;
   background: rgba(255, 255, 255, 0.15);
-}
+} 
+
 
 .register {
   text-align: center;
