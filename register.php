@@ -55,7 +55,7 @@ if (isset($_POST['username'])) {
                 $_SESSION['username'] = $username; 
  
                 // Redirect to a welcome page or any other protected page 
-                header('Location: indexacademy.php'); 
+                header('Location: login.php'); 
                 exit(); 
             } else { 
                 echo 'Error: ' . $connection->error; 

@@ -63,26 +63,13 @@
 
                         </li>  -->
                     </ul>
-                    <div class="buttons"> 
-        <?php 
-        if (!isset($_SESSION['user_id'])) { ?> 
-                <input type="button" value="Login" onclick="redirectToURL('http://localhost/simplecoffee/simplecoffeeacademy/login.php')"> 
-                 
-            <?php } else { 
-                // User is logged in 
-                $username = $_SESSION['username']; ?> 
-             
-                <input type="button" value="Dashboard" onclick="redirectToURL('http://localhost/simplecoffee/simplecoffeeacademy/client_dashbord.php')"> 
-                <input type="button" value="Logout" onclick="redirectToURL('http://localhost/simplecoffee/simplecoffeeacademy/indexacademy.php?logout')"> 
-            <?php } 
-            ?> 
-      </div> 
+                    
  
         <!--Navbar End-->
                 </div>
             </div>
         </nav>
-       
+        
        <!--Navbar End-->
    </header>
     <!--Header End-->

@@ -50,7 +50,7 @@ if (isset($_POST['username'])) {
               $_SESSION['username'] = $username; 
 
               // Redirect to a welcome page or any other protected page 
-              header('Location: client_dashbord.php'); 
+              header('Location: indexacademy.php'); 
               exit(); 
           } else { 
               echo 'Invalid username or password.'; 
