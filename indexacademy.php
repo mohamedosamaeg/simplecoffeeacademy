@@ -168,11 +168,9 @@ if (isset($_GET['logout'])) {
         <!-- ======= About Section ======= -->
         <section id="about" class="about mt-5">
             <div class="container-fluid">
-                <h2 class="h1-responsive font-weight-bold text-center my-2">About</h2>
+                <h2 class="h1-responsive font-weight-bold text-center my-2"></h2>
                 <!--Section description-->
-                <p class="text-center w-responsive mx-auto mb-1">Do you have any questions? Please do not hesitate to
-                    contact us directly. Your friends will come back to you within
-                    a matter of hours to help you.</p>
+                <p class="text-center w-responsive mx-auto mb-1"></p>
                 <div class="row  pt-5 pb-5">
 
                     <div class="col-lg-5 align-items-stretch video-box"
