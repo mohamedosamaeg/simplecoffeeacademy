@@ -332,7 +332,7 @@
 
         <div class="row">
 
-            <iframe class="map" src="simplecoffee/simplecoffeeacademy/images/bull.png" allowfullscreen="" loading="lazy"></iframe>
+            <iframe class="map" src="images/bull.png" allowfullscreen="" loading="lazy"></iframe>
 
             <form action="">
                 <h3>get in touch</h3>

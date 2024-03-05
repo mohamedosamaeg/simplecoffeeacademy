@@ -50,7 +50,7 @@ if (isset($_GET['logout'])) {
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="simplecoffeeacademy\images\logo-label.svg" alt="">
+                    <img src="images\logo-label.svg" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"

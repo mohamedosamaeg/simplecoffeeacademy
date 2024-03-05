@@ -30,41 +30,59 @@
     <!--Header Start-->
     <header>
        
-       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-           <div class="container">
-               <a class="navbar-brand" href="index.php">
-                   <img src="/images/logo-label.svg" alt="">
-               </a>
-               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                   data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                   aria-expanded="false" aria-label="Toggle navigation">
-                   <span class="bi bi-list"></span>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                   <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                       <li class="nav-item">
-                           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
-                       </li>
-                       <li class="nav-item">
-                           <a class="nav-link" href="courses.php">Courses</a>
-                       </li>
-
-                       <li class="nav-item">
-                           <a class="nav-link" href="client_dashboard.php">Dashboard</a>
-                       </li>
-                       <li class="nav-item">
-                           <a class="nav-link" href="indexshop.php">Shop</a>
-                       </li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images\logo-label.svg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="bi bi-list"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                           <a class="nav-link" href="login.php">login</a>
-                       </li> 
-                       <li class="nav-item">
-                           <a class="nav-link" href="login.php">logout</a>
-                       </li> 
-                   </ul>
-               </div>
-           </div>
-       </nav>
+                            <a class="nav-link active" aria-current="page" href="indexacademy.php">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="courses.php">Courses</a>
+                        </li>
+
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="http://localhost/simplecoffee/simplecoffeeacademy/client_dashbord.php">Dashboard</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="indexshop.php">Shop</a>
+                        </li>
+                         <!-- <li class="nav-item">
+                            <a class="nav-link" href="login.php">login</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.php">logout</a>
+
+                        </li>  -->
+                    </ul>
+                    <div class="buttons"> 
+        <?php 
+        if (!isset($_SESSION['user_id'])) { ?> 
+                <input type="button" value="Login" onclick="redirectToURL('http://localhost/simplecoffee/simplecoffeeacademy/login.php')"> 
+                 
+            <?php } else { 
+                // User is logged in 
+                $username = $_SESSION['username']; ?> 
+             
+                <input type="button" value="Dashboard" onclick="redirectToURL('http://localhost/simplecoffee/simplecoffeeacademy/client_dashbord.php')"> 
+                <input type="button" value="Logout" onclick="redirectToURL('http://localhost/simplecoffee/simplecoffeeacademy/indexacademy.php?logout')"> 
+            <?php } 
+            ?> 
+      </div> 
+ 
+        <!--Navbar End-->
+                </div>
+            </div>
+        </nav>
+       
        <!--Navbar End-->
    </header>
     <!--Header End-->
