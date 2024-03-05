@@ -34,7 +34,7 @@ if (isset($_GET['logout'])) {
         rel="stylesheet">
 
     <!-- End Bootstrap CSS -->
-    <link rel="icon" href="img/icon.svg" type="image/x-icon">
+    <link rel="icon" href="images/icon.svg" type="image/x-icon">
     <!--Custom Css-->
     <link rel="stylesheet" href="./CSS/style.css">
     <title>Simple Coffee Academy</title>
