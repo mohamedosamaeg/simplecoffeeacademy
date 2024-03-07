@@ -382,7 +382,7 @@
             <a href="#">products</a>
             <a href="#">review</a>
             <a href="#">contact</a>
-            <a href="/indexacademy.php">our academy</a>
+            <a href="/simplecoffee/simplecoffeeacademy/indexacademy.PHP">our academy</a>
         </div>
 
         <div class="credit">created by <span>Mo selim</span> | all rights reserved</div>
